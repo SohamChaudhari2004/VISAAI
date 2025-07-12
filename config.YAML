@@ -2,12 +2,12 @@
 
 # API keys and endpoints
 mistral:
-  api_key: "SY9Sw95bQbVDVjEhc2lagv0SqBwKaAmY" # Set via environment variable MISTRAL_API_KEY
+  api_key: "" # Set via environment variable MISTRAL_API_KEY
   api_url: "https://api.mistral.ai/v1/chat/completions"
   model: "mistral-large-latest"
 
 groq_whisper:
-  api_key: "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" # Set via environment variable GROQ_API_KEY
+  api_key: "" # Set via environment variable GROQ_API_KEY
   model : "whisper-large-v3-turbo"
   endpoint: "https://api.groq.com/openai/v1/audio/transcriptions"
 
