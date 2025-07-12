@@ -1,0 +1,71 @@
+Software Requirements Specification (SRS)
+Architecture: The system follows a client-server model. The frontend (Next.js) captures audio via the Web Audio API (getUserMedia) and sends it to the backend. The backend (FastAPI) exposes WebSocket endpoints to stream audio chunks and REST endpoints for control flows (start interview, submit answer, fetch results). FastAPI natively supports WebSockets for bi-directional streaming (sending/receiving text and binary data)
+fastapi.tiangolo.com
+.
+Frontend (Next.js):
+Implement microphone access and continuous recording (e.g. with MediaRecorder) to send audio in small chunks (e.g. 1s) via WebSocket or Socket.IO
+fastapi.tiangolo.com
+stackoverflow.com
+.
+Provide UI for visa type selection, voice selection, and a “Start” button. Display text of each question and answers, and show evaluation results.
+On each question, play the received TTS audio (Edge-TTS output) for the user. After answer, optionally display interim transcript.
+Backend (FastAPI):
+API Routes (REST):
+POST /api/startInterview: Accepts {visaType, subscriptionLevel, voiceId}. Initializes a session (generates or selects N questions from dataset via RAG). Returns session_id and first question text (and optionally audio URL).
+POST /api/submitAnswer: Accepts {session_id, answer_text} (or triggers ASR result), returns next question (text + TTS). If no more questions, indicates session end and returns summary metrics.
+GET /api/voices: Returns available TTS voice options (e.g. list of Edge-tts voices).
+GET /api/evaluate: Optionally returns aggregated performance scores for the session.
+WebSockets:
+A /ws/stream endpoint receives binary audio from client and sends back transcribed text or results in real-time. (FastAPI’s WebSocket can send/receive binary and text
+fastapi.tiangolo.com
+.) This enables continuous ASR feedback or VAD.
+RAG Pipeline: On startup, load the visa question dataset (e.g. from the provided visa_interview_large_dataset.csv) into a ChromaDB collection
+realpython.com
+. Use a text-embedding model (could use Mistral’s mistral-embed or a HuggingFace embedder) to index questions. For each session, retrieve top-N relevant questions by querying the vector store, then use Mistral chat completion (or a simpler prompt template) to refine the questions.
+Technical Note: The RAG process involves: embedding question chunks, storing in Chroma (open-source vector DB
+realpython.com
+), and on query embedding the new context and finding similar questions
+docs.mistral.ai
+realpython.com
+.
+LLM (Mistral API): Use Mistral’s chat completion endpoints to generate or follow-up on questions and to evaluate answer content. Mistral 7B (Apache-2.0) outperforms similarly-sized LLMs
+mistral.ai
+ and can be accessed via their API. Example: mistralai.client.chat.completions.create(model="mistral-chat", messages=[...]).
+TTS (Edge-TTS): Use the Python edge-tts package to convert question text to speech
+pypi.org
+. It requires no API key and supports many voices (edge-tts --list-voices). The chosen voiceID from frontend is used (e.g. edge-tts --voice <voiceId> --text "Hello").
+STT (Whisper via Groq API): Send audio chunks or complete answers to Groq’s Whisper endpoint. Groq provides OpenAI-compatible /audio/transcriptions endpoints for fast speech-to-text
+console.groq.com
+. We will stream or upload the final answer audio (20s max) and get back a transcription JSON. Use the “large-v3-turbo” model for speed.
+VAD: Implement voice activity detection to determine when the user stops speaking. Options include webrtcvad-wheels (Google’s VAD with Python 3.11 support
+pypi.org
+) or silero-vad (a PyTorch model, <1ms inference per 30ms)
+github.com
+. VAD can trim leading/trailing silence and also enforce the 20s limit.
+Performance Evaluation: After each answer, compute scores:
+Fluency: e.g. speech rate, filler words (can use ASR result or audio features).
+Confidence: based on volume and pitch stability.
+Content Accuracy: Compare answer text with expected facts (e.g. from documents or earlier answers).
+Clarity/Detail: Length and relevance of answer text.
+Response Time: Time from question end to answer start.
+These metrics can be derived from the transcription and audio metadata. A combined rubric gives feedback (e.g. text summary or numeric scores).
+Data & Persistence: Store session state in-memory or a lightweight DB: session ID, current question index, transcripts, scores. ChromaDB holds only the static question corpus. No user data is stored beyond the session (optional to extend).
+Compatibility: Use Python 3.11. Required packages: fastapi, uvicorn, pydantic, chromadb, mistralai (if available) or requests, edge-tts, webrtcvad-wheels or silero-vad, plus standard libs. These all support Python 3.11.
+Open-Source Tools Justification:
+ChromaDB – an open, high-performance vector database for embeddings
+realpython.com
+.
+Mistral 7B – top-tier LLM with Apache 2.0 license
+mistral.ai
+.
+edge-tts – Python interface for Microsoft’s neural TTS voices
+pypi.org
+.
+Groq’s Whisper API – fast ASR, OpenAI-compatible
+console.groq.com
+ (we assume access via provided API key).
+Silero VAD – lightweight voice activity detection
+github.com
+.
+This architecture ensures all components can be implemented with free/open libraries and run on a standard Python stack. Each major step (RAG, TTS, STT, scoring) is decoupled via APIs or modules for maintainability.
+

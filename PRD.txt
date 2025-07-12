@@ -1,0 +1,31 @@
+Product Requirements Document (PRD)
+Objective: Build an AI-driven visa interview coach that simulates a real interview conversation. The system should ask visa-related questions and listen to the user’s spoken answers, providing an immersive training experience. It must support two visa types (tourist/student) and three selectable AI voices.
+User Stories: “As a visa applicant, I want to practice my visa interview by speaking my answers and getting feedback on my fluency and content.” “As a free user, I get 5 questions; paid users get more (10 or 15) per session.” “As a developer, I want modular components (Next.js frontend, FastAPI backend) with well-defined APIs and config.”
+Key Features:
+Subscription Limits: Enforce question limits per pack (5/10/15) before ending session.
+Flexible Entry: On start, user chooses visa category and voice, then presses “Start Interview.”
+Question Generation: Dynamically generate questions by retrieving relevant prompts from the visa question dataset (RAG approach).
+Voice Interaction: Use TTS to ask each question (optionally via Edge-TTS voices); record user’s answer via browser mic.
+Speech Processing: Continuously stream audio to backend; use VAD to trim answers or enforce 20s max, transcribe with Whisper.
+Performance Metrics: After each answer (or at end), assess communication skills (fluency, confidence, clarity, honesty), and consistency against application info. Provide a score or feedback summary.
+Scalability & Open Source: Use open-source tools and standards (Mistral LLM, ChromaDB, Edge-TTS, Whisper) for easy extension and no vendor lock-in.
+User Experience: Simple single-page app. Minimal latency in streaming Q&A. Clear feedback on performance after completion.
+Out of Scope (for V1): Video/facial analysis (for V2 only), hosting considerations.
+No major external dependencies (all core tech is open or already available). This system mirrors existing AI-interview apps
+blog.streamlit.io
+ but is specialized for visa training.
+Assumptions:
+- Users have a microphone and basic web browser.
+- Users can select a visa type and AI voice at the start.
+- The system will handle audio streaming and processing efficiently.
+- The backend can scale to handle multiple concurrent users.
+- The system will provide clear feedback on performance metrics.
+
+Constraints:
+- Must use FastAPI for backend and Next.js for frontend.
+- Must support Python 3.11 and follow PEP8 coding standards.
+- Must use open-source libraries for TTS, ASR, VAD, and vector storage.
+- Must be modular and well-documented for easy maintenance and future enhancements.
+- Must provide API documentation with curl examples.
+- Must include a configuration file for easy setup and deployment.
+- Must include a coding rules file to enforce best practices.

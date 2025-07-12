@@ -1,0 +1,86 @@
+.questionDisplay {
+  margin-bottom: 2rem;
+}
+
+.progressBar {
+  height: 8px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  margin-bottom: 0.5rem;
+  position: relative;
+}
+
+.progressFill {
+  height: 100%;
+  background-color: #0d6efd;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.progressText {
+  font-size: 0.875rem;
+  color: #6c757d;
+}
+
+.questionCard {
+  background-color: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.questionText {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+.statusIndicator {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #0d6efd;
+  padding: 0.5rem;
+  background-color: #f1f8ff;
+  border-radius: 4px;
+}
+
+.transcription {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #0d6efd;
+}
+
+.evaluation {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #f0f9ff;
+  border-radius: 8px;
+  border-left: 4px solid #20c997;
+}
+
+.scores {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.scoreItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  min-width: 80px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.scoreItem span:last-child {
+  font-weight: bold;
+  margin-top: 0.25rem;
+  font-size: 1.1rem;
+}

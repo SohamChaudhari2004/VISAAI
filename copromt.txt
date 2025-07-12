@@ -1,0 +1,262 @@
+Connecting to WebSocket at ws://localhost:8000/ws/stream
+AudioRecorder.jsx:144 Connecting to WebSocket at ws://localhost:8000/ws/stream
+AudioRecorder.jsx:144 Connecting to WebSocket at ws://localhost:8000/ws/stream
+6WebSocket connection to 'ws:<URL>/ws/stream' failed: WebSocket is closed before the connection is established.
+AudioRecorder.jsx:144 Connecting to WebSocket at ws://localhost:8000/ws/stream
+AudioRecorder.jsx:144 Connecting to WebSocket at ws://localhost:8000/ws/stream
+AudioRecorder.jsx:144 Connecting to WebSocket at ws://localhost:8000/ws/stream
+[NEW] Explain Console errors by using Copilot in Edge: click
+         
+         to explain an error. 
+        Learn more
+        Don't show again
+AudioRecorder.jsx:221  WebSocket error: Event {isTrusted: true, type: 'error', target: WebSocket, currentTarget: WebSocket, eventPhase: 2, …}
+ws.onerror @ AudioRecorder.jsx:221
+AudioRecorder.jsx:225 WebSocket connection closed: 1006 
+AudioRecorder.jsx:240 Attempting to reconnect WebSocket...
+AudioRecorder.jsx:221  WebSocket error: Event {isTrusted: true, type: 'error', target: WebSocket, currentTarget: WebSocket, eventPhase: 2, …}
+ws.onerror @ AudioRecorder.jsx:221
+AudioRecorder.jsx:225 WebSocket connection closed: 1006 
+AudioRecorder.jsx:240 Attempting to reconnect WebSocket...
+AudioRecorder.jsx:150 WebSocket connection established
+AudioRecorder.jsx:161 Sent session ID: fda45498-47f8-4448-baca-54a95c0a9df5 to WebSocket
+2AudioRecorder.jsx:150 WebSocket connection established
+AudioRecorder.jsx:161 Sent session ID: fda45498-47f8-4448-baca-54a95c0a9df5 to WebSocket
+AudioRecorder.jsx:150 WebSocket connection established
+AudioRecorder.jsx:161 Sent session ID: fda45498-47f8-4448-baca-54a95c0a9df5 to WebSocket
+QuestionDisplay.jsx:69  Error playing audio
+audio.onerror @ QuestionDisplay.jsx:69
+localhost/:1  Uncaught (in promise) NotSupportedError: Failed to load because no supported source was found.
+QuestionDisplay.jsx:69  Error playing audio
+audio.onerror @ QuestionDisplay.jsx:69
+localhost/:1  Uncaught (in promise) NotSupportedError: Failed to load because no supported source was found.
+2AudioRecorder.jsx:144 Connecting to WebSocket at ws://localhost:8000/ws/stream
+2AudioRecorder.jsx:150 WebSocket connection established
+AudioRecorder.jsx:161 Sent session ID: fda45498-47f8-4448-baca-54a95c0a9df5 to WebSocket
+App.jsx:81 Question audio finished playing
+App.jsx:86 Starting recording
+AudioRecorder.jsx:97 Starting recording timer
+AudioRecorder.jsx:269 Starting recording
+AudioRecorder.jsx:328 MediaRecorder started
+AudioRecorder.jsx:338 Stopping recording
+AudioRecorder.jsx:105 Recording time limit reached
+AudioRecorder.jsx:105 Recording time limit reached
+AudioRecorder.jsx:297 MediaRecorder stopped
+2AudioRecorder.jsx:338 Stopping recording
+App.jsx:188 Recording complete, transcribed text received
+App.jsx:144 Submitting answer: "During my visit I will be stay..."
+AudioRecorder.jsx:225 WebSocket connection closed: 1005 
+AudioRecorder.jsx:240 Attempting to reconnect WebSocket...
+AudioRecorder.jsx:225 WebSocket connection closed: 1005 
+AudioRecorder.jsx:240 Attempting to reconnect WebSocket...
+AudioRecorder.jsx:144 Connecting to WebSocket at ws://localhost:8000/ws/stream
+AudioRecorder.jsx:144 Connecting to WebSocket at ws://localhost:8000/ws/stream
+AudioRecorder.jsx:144 Connecting to WebSocket at ws://localhost:8000/ws/stream
+AudioRecorder.jsx:144 Connecting to WebSocket at ws://localhost:8000/ws/stream
+AudioRecorder.jsx:144 Connecting to WebSocket at ws://localhost:8000/ws/stream
+AudioRecorder.jsx:144 Connecting to WebSocket at ws://localhost:8000/ws/stream
+AudioRecorder.jsx:221  WebSocket error: Event {isTrusted: true, type: 'error', target: WebSocket, currentTarget: WebSocket, eventPhase: 2, …}
+ws.onerror @ AudioRecorder.jsx:221
+AudioRecorder.jsx:225 WebSocket connection closed: 1006 
+AudioRecorder.jsx:240 Attempting to reconnect WebSocket...
+AudioRecorder.jsx:221  WebSocket error: Event {isTrusted: true, type: 'error', target: WebSocket, currentTarget: WebSocket, eventPhase: 2, …}
+ws.onerror @ AudioRecorder.jsx:221
+AudioRecorder.jsx:225 WebSocket connection closed: 1006 
+AudioRecorder.jsx:240 Attempting to reconnect WebSocket...
+AudioRecorder.jsx:150 WebSocket connection established
+AudioRecorder.jsx:161 Sent session ID: fda45498-47f8-4448-baca-54a95c0a9df5 to WebSocket
+2AudioRecorder.jsx:150 WebSocket connection established
+AudioRecorder.jsx:161 Sent session ID: fda45498-47f8-4448-baca-54a95c0a9df5 to WebSocket
+AudioRecorder.jsx:150 WebSocket connection established
+AudioRecorder.jsx:161 Sent session ID: fda45498-47f8-4448-baca-54a95c0a9df5 to WebSocket
+2AudioRecorder.jsx:144 Connecting to WebSocket at ws://localhost:8000/ws/stream
+QuestionDisplay.jsx:69  Error playing audio
+audio.onerror @ QuestionDisplay.jsx:69
+localhost/:1  Uncaught (in promise) NotSupportedError: Failed to load because no supported source was found.
+QuestionDisplay.jsx:69  Error playing audio
+audio.onerror @ QuestionDisplay.jsx:69
+localhost/:1  Uncaught (in promise) NotSupportedError: Failed to load because no supported source was found.
+2AudioRecorder.jsx:150 WebSocket connection established
+AudioRecorder.jsx:161 Sent session ID: fda45498-47f8-4448-baca-54a95c0a9df5 to WebSocket
+2AudioRecorder.jsx:144 Connecting to WebSocket at ws://localhost:8000/ws/stream
+2AudioRecorder.jsx:150 WebSocket connection established
+AudioRecorder.jsx:161 Sent session ID: fda45498-47f8-4448-baca-54a95c0a9df5 to WebSocket
+AudioRecorder.jsx:194  WebSocket error: Connection timed out waiting for session ID
+ws.onmessage @ AudioRecorder.jsx:194
+App.jsx:81 Question audio finished playing
+App.jsx:86 Starting recording
+AudioRecorder.jsx:97 Starting recording timer
+AudioRecorder.jsx:269 Starting recording
+AudioRecorder.jsx:328 MediaRecorder started
+AudioRecorder.jsx:338 Stopping recording
+AudioRecorder.jsx:105 Recording time limit reached
+AudioRecorder.jsx:105 Recording time limit reached
+AudioRecorder.jsx:297 MediaRecorder stopped
+2AudioRecorder.jsx:338 Stopping recording
+App.jsx:188 Recording complete, transcribed text received
+App.jsx:144 Submitting answer: "I love my country and my state..."
+AudioRecorder.jsx:225 WebSocket connection closed: 1005 
+AudioRecorder.jsx:240 Attempting to reconnect WebSocket...
+AudioRecorder.jsx:225 WebSocket connection closed: 1005 
+AudioRecorder.jsx:240 Attempting to reconnect WebSocket...
+AudioRecorder.jsx:144 Connecting to WebSocket at ws://localhost:8000/ws/stream
+AudioRecorder.jsx:144 Connecting to WebSocket at ws://localhost:8000/ws/stream
+AudioRecorder.jsx:144 Connecting to WebSocket at ws://localhost:8000/ws/stream
+AudioRecorder.jsx:144 Connecting to WebSocket at ws://localhost:8000/ws/stream
+AudioRecorder.jsx:144 Connecting to WebSocket at ws://localhost:8000/ws/stream
+AudioRecorder.jsx:144 Connecting to WebSocket at ws://localhost:8000/ws/stream
+AudioRecorder.jsx:221  WebSocket error: Event {isTrusted: true, type: 'error', target: WebSocket, currentTarget: WebSocket, eventPhase: 2, …}
+ws.onerror @ AudioRecorder.jsx:221
+AudioRecorder.jsx:225 WebSocket connection closed: 1006 
+AudioRecorder.jsx:240 Attempting to reconnect WebSocket...
+AudioRecorder.jsx:221  WebSocket error: Event {isTrusted: true, type: 'error', target: WebSocket, currentTarget: WebSocket, eventPhase: 2, …}
+ws.onerror @ AudioRecorder.jsx:221
+AudioRecorder.jsx:225 WebSocket connection closed: 1006 
+AudioRecorder.jsx:240 Attempting to reconnect WebSocket...
+AudioRecorder.jsx:150 WebSocket connection established
+AudioRecorder.jsx:161 Sent session ID: fda45498-47f8-4448-baca-54a95c0a9df5 to WebSocket
+2AudioRecorder.jsx:150 WebSocket connection established
+AudioRecorder.jsx:161 Sent session ID: fda45498-47f8-4448-baca-54a95c0a9df5 to WebSocket
+AudioRecorder.jsx:150 WebSocket connection established
+AudioRecorder.jsx:161 Sent session ID: fda45498-47f8-4448-baca-54a95c0a9df5 to WebSocket
+2AudioRecorder.jsx:144 Connecting to WebSocket at ws://localhost:8000/ws/stream
+AudioRecorder.jsx:194  WebSocket error: Connection timed out waiting for session ID
+ws.onmessage @ AudioRecorder.jsx:194
+AudioRecorder.jsx:150 WebSocket connection established
+AudioRecorder.jsx:161 Sent session ID: fda45498-47f8-4448-baca-54a95c0a9df5 to WebSocket
+AudioRecorder.jsx:150 WebSocket connection established
+QuestionDisplay.jsx:69  Error playing audio
+audio.onerror @ QuestionDisplay.jsx:69
+localhost/:1  Uncaught (in promise) NotSupportedError: Failed to load because no supported source was found.
+QuestionDisplay.jsx:69  Error playing audio
+audio.onerror @ QuestionDisplay.jsx:69
+localhost/:1  Uncaught (in promise) NotSupportedError: Failed to load because no supported source was found.
+AudioRecorder.jsx:194  WebSocket error: Connection timed out waiting for session ID
+ws.onmessage @ AudioRecorder.jsx:194
+AudioRecorder.jsx:181 Received keep-alive pong
+2AudioRecorder.jsx:144 Connecting to WebSocket at ws://localhost:8000/ws/stream
+2AudioRecorder.jsx:150 WebSocket connection established
+AudioRecorder.jsx:161 Sent session ID: fda45498-47f8-4448-baca-54a95c0a9df5 to WebSocket
+App.jsx:81 Question audio finished playing
+App.jsx:86 Starting recording
+AudioRecorder.jsx:97 Starting recording timer
+AudioRecorder.jsx:269 Starting recording
+AudioRecorder.jsx:328 MediaRecorder started
+AudioRecorder.jsx:338 Stopping recording
+AudioRecorder.jsx:105 Recording time limit reached
+AudioRecorder.jsx:105 Recording time limit reached
+AudioRecorder.jsx:297 MediaRecorder stopped
+2AudioRecorder.jsx:338 Stopping recording
+App.jsx:188 Recording complete, transcribed text received
+App.jsx:144 Submitting answer: "No, I have never been denied a..."
+AudioRecorder.jsx:225 WebSocket connection closed: 1005 
+AudioRecorder.jsx:240 Attempting to reconnect WebSocket...
+AudioRecorder.jsx:225 WebSocket connection closed: 1005 
+AudioRecorder.jsx:240 Attempting to reconnect WebSocket...
+ResultsSummary.jsx:5  Uncaught TypeError: Cannot destructure property 'overall_score' of 'results' as it is undefined.
+    at ResultsSummary (ResultsSummary.jsx:5:11)
+    at react-stack-bottom-frame (react-dom-client.development.js:23863:20)
+    at renderWithHooks (react-dom-client.development.js:5529:22)
+    at updateFunctionComponent (react-dom-client.development.js:8897:19)
+    at beginWork (react-dom-client.development.js:10522:18)
+    at runWithFiberInDEV (react-dom-client.development.js:1519:30)
+    at performUnitOfWork (react-dom-client.development.js:15132:22)
+    at workLoopSync (react-dom-client.development.js:14956:41)
+    at renderRootSync (react-dom-client.development.js:14936:11)
+    at performWorkOnRoot (react-dom-client.development.js:14462:44)
+ResultsSummary @ ResultsSummary.jsx:5
+react-stack-bottom-frame @ react-dom-client.development.js:23863
+renderWithHooks @ react-dom-client.development.js:5529
+updateFunctionComponent @ react-dom-client.development.js:8897
+beginWork @ react-dom-client.development.js:10522
+runWithFiberInDEV @ react-dom-client.development.js:1519
+performUnitOfWork @ react-dom-client.development.js:15132
+workLoopSync @ react-dom-client.development.js:14956
+renderRootSync @ react-dom-client.development.js:14936
+performWorkOnRoot @ react-dom-client.development.js:14462
+performWorkOnRootViaSchedulerTask @ react-dom-client.development.js:16216
+performWorkUntilDeadline @ scheduler.development.js:45
+<ResultsSummary>
+exports.jsxDEV @ react-jsx-dev-runtime.development.js:346
+App @ App.jsx:286
+react-stack-bottom-frame @ react-dom-client.development.js:23863
+renderWithHooksAgain @ react-dom-client.development.js:5629
+renderWithHooks @ react-dom-client.development.js:5541
+updateFunctionComponent @ react-dom-client.development.js:8897
+beginWork @ react-dom-client.development.js:10522
+runWithFiberInDEV @ react-dom-client.development.js:1519
+performUnitOfWork @ react-dom-client.development.js:15132
+workLoopSync @ react-dom-client.development.js:14956
+renderRootSync @ react-dom-client.development.js:14936
+performWorkOnRoot @ react-dom-client.development.js:14462
+performWorkOnRootViaSchedulerTask @ react-dom-client.development.js:16216
+performWorkUntilDeadline @ scheduler.development.js:45
+<App>
+exports.jsxDEV @ react-jsx-dev-runtime.development.js:346
+(anonymous) @ main.jsx:8
+App.jsx:286  An error occurred in the <ResultsSummary> component.
+
+Consider adding an error boundary to your tree to customize error handling behavior.
+Visit https://react.dev/link/error-boundaries to learn more about error boundaries.
+
+defaultOnUncaughtError @ react-dom-client.development.js:8283
+logUncaughtError @ react-dom-client.development.js:8352
+runWithFiberInDEV @ react-dom-client.development.js:1519
+lane.callback @ react-dom-client.development.js:8382
+callCallback @ react-dom-client.development.js:5363
+commitCallbacks @ react-dom-client.development.js:5383
+runWithFiberInDEV @ react-dom-client.development.js:1522
+commitLayoutEffectOnFiber @ react-dom-client.development.js:12709
+flushLayoutEffects @ react-dom-client.development.js:15559
+commitRoot @ react-dom-client.development.js:15402
+commitRootWhenReady @ react-dom-client.development.js:14652
+performWorkOnRoot @ react-dom-client.development.js:14575
+performWorkOnRootViaSchedulerTask @ react-dom-client.development.js:16216
+performWorkUntilDeadline @ scheduler.development.js:45
+<ResultsSummary>
+exports.jsxDEV @ react-jsx-dev-runtime.development.js:346
+App @ App.jsx:286
+react-stack-bottom-frame @ react-dom-client.development.js:23863
+renderWithHooksAgain @ react-dom-client.development.js:5629
+renderWithHooks @ react-dom-client.development.js:5541
+updateFunctionComponent @ react-dom-client.development.js:8897
+beginWork @ react-dom-client.development.js:10522
+runWithFiberInDEV @ react-dom-client.development.js:1519
+performUnitOfWork @ react-dom-client.development.js:15132
+workLoopSync @ react-dom-client.development.js:14956
+renderRootSync @ react-dom-client.development.js:14936
+performWorkOnRoot @ react-dom-client.development.js:14462
+performWorkOnRootViaSchedulerTask @ react-dom-client.development.js:16216
+performWorkUntilDeadline @ scheduler.development.js:45
+<App>
+exports.jsxDEV @ react-jsx-dev-runtime.development.js:346
+(anonymous) @ main.jsx:8
+App.jsx:92  Error playing audio: AbortError: The play() request was interrupted because the media was removed from the document.
+playAudio @ App.jsx:92
+await in playAudio
+(anonymous) @ App.jsx:97
+react-stack-bottom-frame @ react-dom-client.development.js:23949
+runWithFiberInDEV @ react-dom-client.development.js:1519
+commitHookEffectListMount @ react-dom-client.development.js:11905
+commitHookPassiveMountEffects @ react-dom-client.development.js:12026
+commitPassiveMountOnFiber @ react-dom-client.development.js:13841
+recursivelyTraversePassiveMountEffects @ react-dom-client.development.js:13815
+commitPassiveMountOnFiber @ react-dom-client.development.js:13957
+recursivelyTraversePassiveMountEffects @ react-dom-client.development.js:13815
+commitPassiveMountOnFiber @ react-dom-client.development.js:13853
+flushPassiveEffects @ react-dom-client.development.js:15737
+(anonymous) @ react-dom-client.development.js:15379
+performWorkUntilDeadline @ scheduler.development.js:45
+<App>
+exports.jsxDEV @ react-jsx-dev-runtime.development.js:346
+(anonymous) @ main.jsx:8
+2AudioRecorder.jsx:194  WebSocket error: Connection timed out waiting for session ID
+ws.onmessage @ AudioRecorder.jsx:194
+AudioRecorder.jsx:181 Received keep-alive pong
+2AudioRecorder.jsx:144 Connecting to WebSocket at ws://localhost:8000/ws/stream
+2AudioRecorder.jsx:150 WebSocket connection established
+AudioRecorder.jsx:161 Sent session ID: fda45498-47f8-4448-baca-54a95c0a9df5 to WebSocket
+2AudioRecorder.jsx:181 Received keep-alive pong
+AudioRecorder.jsx:194  WebSocket error: Connection timed out waiting for session ID
+ws.onmessage @ AudioRecorder.jsx:194
+2AudioRecorder.jsx:181 Received keep-alive pong. again after three questions the websockets are getting disconnected.also i feel the transcribed audio text is not being passed to the llm for result processing . Check the console log for errors ans more details about the system issues and fix them promptly.

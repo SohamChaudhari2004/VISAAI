@@ -1,0 +1,19 @@
+Coding Rules and Style Guidelines
+All code must follow established Python standards and clean coding practices:
+PEP 8 Conventions: Use 4-space indentation, line length ≤88 characters, and follow naming conventions: functions/variables in snake_case, classes in PascalCase
+peps.python.org
+. Example: def start_interview_session():, class InterviewSession:.
+Descriptive Names: Use clear, descriptive names (e.g. session_id, question_text). Avoid single-letter names except for loop indices.
+Comments/Docstrings: Include module-level and function docstrings. Every public function/class should have a short description and parameter explanations. Inline comments only for complex logic.
+Error Handling: Use try/except to catch API or I/O errors; return informative error messages.
+Logging: Use the logging module instead of print, with appropriate levels (info, warning, error).
+Dependency Management: Pin package versions in requirements.txt. Use virtual environments.
+Type Annotations: Use Python type hints (-> None, str, etc.) on functions/methods for readability.
+Config & Secrets: Do not hardcode API keys. Read them from environment variables or config file (see below).
+Asynchronous I/O: Since FastAPI supports async endpoints, use async def and await for I/O-bound operations (e.g. HTTP calls to Mistral or Groq).
+Separation of Concerns: Keep business logic separated from API route handlers (e.g. have separate modules for RAG functions, ASR/TTS wrappers, scoring logic).
+Testing: Write unit tests for core functions (e.g. a test to ensure VAD correctly splits speech). Name test files test_*.py.
+Linting/Formatting: Use tools like flake8 or pylint for linting, and black for auto-formatting.
+These rules are grounded in standard Python style guides
+peps.python.org
+ and best practices, ensuring readable and maintainable code.

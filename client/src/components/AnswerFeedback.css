@@ -1,0 +1,139 @@
+.answer-feedback {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: var(--shadow);
+}
+
+.answer-feedback h3 {
+  color: #343a40;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.3rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.answer-feedback h4 {
+  color: #495057;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.answer-text {
+  margin-bottom: 20px;
+}
+
+.user-answer {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 4px;
+  font-style: italic;
+  color: #495057;
+  white-space: pre-wrap;
+}
+
+.transcription {
+  background-color: var(--background-color);
+  padding: 15px;
+  border-radius: 6px;
+  border-left: 4px solid var(--primary-color);
+  font-style: italic;
+  margin-top: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.feedback-actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.continue-button {
+  background-color: var(--secondary-color);
+  padding: 12px 24px;
+  font-size: 16px;
+}
+
+.continue-button:hover {
+  background-color: #27ae60;
+}
+
+.feedback-scores {
+  margin-bottom: 1.5rem;
+}
+
+.score-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+}
+
+.score-item {
+  text-align: center;
+  padding: 0.75rem;
+  border-radius: 4px;
+  background-color: #f8f9fa;
+}
+
+.score-item.overall {
+  grid-column: 1 / -1;
+  background-color: #e9f5ff;
+}
+
+.score-label {
+  font-size: 0.85rem;
+  color: #6c757d;
+  margin-bottom: 0.25rem;
+}
+
+.score-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.feedback-text {
+  background-color: #f8f9fa;
+  padding: 1rem;
+  border-radius: 4px;
+  border-left: 3px solid #17a2b8;
+}
+
+.feedback-text p {
+  margin: 0;
+  color: #495057;
+  line-height: 1.5;
+}
+
+@media (max-width: 600px) {
+  .score-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .score-item.overall {
+    grid-column: span 2;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .answer-feedback {
+    background-color: #2a2a2a;
+  }
+
+  .answer-feedback h4 {
+    color: #bbb;
+  }
+
+  .answer-text,
+  .score-item,
+  .feedback-text {
+    background-color: #333;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  }
+
+  .score-label {
+    color: #aaa;
+  }
+}

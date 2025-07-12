@@ -1,0 +1,20 @@
+You are tasked with creating a **continuous, audio-based visa interview training system** using **FastAPI** (Python 3.11) for the backend and **Next.js** for the frontend.  Key features: 
+- Audio **input** (microphone) and **output** (text-to-speech). 
+- At startup, user selects visa type (“tourist” or “student”) and one of three AI voices. 
+- A “Start Interview” button begins a scripted Q&A. The system generates `N` questions (N = 5/10/15 based on subscription: free/super/premium) from a visa-question dataset (via RAG). 
+- The backend TTS (Edge TTS via Python) asks each question aloud. 
+- The frontend records the user’s answer (max 20s) and streams it to the backend via WebSockets. The backend uses an open-source ASR API (Groq’s hosted OpenAI-Whisper) to transcribe answers. 
+- After each answer, use voice-activity detection (e.g. webrtcvad-wheels or Silero VAD) to detect end-of-speech. 
+- At the end of all the questions, the system evaluates performance metrics (fluency, confidence, content accuracy, response time, honesty, etc.) to score and give feedback (optionally in voice or text). 
+- Use a RAG approach: store the visa questions corpus in ChromaDB (open-source vector store:contentReference[oaicite:3]{index=3}) and use Mistral’s LLM API (Apache-licensed, high performance:contentReference[oaicite:4]{index=4}) to generate or retrieve relevant questions. 
+- All code should follow Python best practices (PEP8 style:contentReference[oaicite:5]{index=5}) and be well-documented. 
+
+Technology stack and tools:
+- **LLM API:** Mistral (7B model, Apache 2.0 license:contentReference[oaicite:6]{index=6}) for generating interview dialogue. 
+- **Text-to-Speech:** `edge-tts` Python library (Microsoft Edge’s neural voices:contentReference[oaicite:7]{index=7}). 
+- **Speech-to-Text:** Groq’s hosted Whisper API (OpenAI-compatible ASR for fast, multilingual transcription:contentReference[oaicite:8]{index=8}). 
+- **RAG / Vector DB:** ChromaDB (open-source, high-performance vector store:contentReference[oaicite:9]{index=9}). 
+- **Voice Activity Detection:** Use `webrtcvad-wheels` (WebRTC VAD with Python 3.11 support:contentReference[oaicite:10]{index=10}) or `silero-vad` (pretrained neural model, sub-ms inference:contentReference[oaicite:11]{index=11}). 
+- **Frontend/Backend:** Next.js (React) for UI and microphone capture; FastAPI with WebSocket endpoints for streaming audio and calling services. 
+
+Ensure the prototype is consistent, robust, and integrates seamlessly with a future video UI (facial analysis is out of scope for now). The final deliverable includes all specified documents and code structure to enable rapid development and integration.:contentReference[oaicite:12]{index=12}:contentReference[oaicite:13]{index=13}  
